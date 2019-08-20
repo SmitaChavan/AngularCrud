@@ -81,6 +81,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "AngularCrud:build"
+            //"proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {

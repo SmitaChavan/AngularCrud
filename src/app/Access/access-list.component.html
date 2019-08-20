@@ -1,0 +1,20 @@
+<p>
+  access-list works!
+</p>
+
+<div class='panel panel-primary'>
+  <div class="panel-heading">
+      <h3 class="panel-title">Select access required</h3>
+  </div>
+  <div class="panel-body">
+    <div class="form-group">
+      <label>Access type</label>
+      <input id="accessName" [(ngModel)]="accessName" name="accessName" type="text" (keyup)="getUserIdsFirstWay($event)"
+      list="dynmicUserIds" /> 
+      <datalist id="dynmicUserIds">
+        <option *ngFor="let item of userList1" [value]="item">{{item}}</option>
+      </datalist>
+      <input type="submit" id="btnSearch" name="btnSearch" text="Search" />
+    </div>
+    
+  </div>
